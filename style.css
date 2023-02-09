@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Roboto,Noto,sans-serif;
+}
+/* Navigation Bar */
+header{
+    background-color: rgb(235, 50, 50);
+}
+header > .nav_bar {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin: 0 2rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+#sr-input{
+    color: #212121;
+    border: 0;
+    height: 2.2em;
+    border-radius: 20px;
+}
+/* youtube icon */
+.yt-icon{
+    width: 4.1em;
+}
+/* Option icon */
+.fa-bars{
+    color: #212121;
+    margin: 20px;
+}
+.fa-user{
+    color: #065fd4;
+}
+
+/* Main Section */
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.free_section{
+    width: 10%;
+    height: 100vh;
+    background-color: aquamarine;
+
+}
+.video_section{
+    width: 70%;
+    height: 100vh;
+    background-color: blueviolet;
+}
+.playlist{
+    width: 20%;
+    height: 100vh;
+    background-color: brown;
+}
