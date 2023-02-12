@@ -5,15 +5,18 @@
 }
 /* Navigation Bar */
 header{
-    background-color: rgb(235, 50, 50);
+    background-color: rgb(248, 243, 243);
 }
-header > .nav_bar {
+.nav_bar {
      display: flex;
      align-items: center;
      justify-content: space-between;
      margin: 0 2rem;
 }
-
+.center{
+    display: flex;
+    align-items: center;
+}
 .logo{
     display: flex;
     align-items: center;
@@ -23,22 +26,27 @@ header > .nav_bar {
     align-items: center;
 }
 #sr-input{
+    background-color: #f8f8f8;
+    width: 25.2em;
     color: #212121;
-    border: 0;
-    height: 2.2em;
-    border-radius: 20px;
+    border: 1px solid #ccc;
+    height: 3em;
+    border-radius: 40px 0 0 40px;
+    padding: 1px 20px 1px 20px;
 }
-/* youtube icon */
-.yt-icon{
-    width: 4.1em;
+#yt_search_icon_btn{
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    width: 64px;
+    height: 44px;  
+    border-radius: 0px 40px 40px 0px; 
+    cursor: pointer;
 }
-/* Option icon */
-.fa-bars{
-    color: #212121;
-    margin: 20px;
-}
-.fa-user{
-    color: #065fd4;
+#voice_search button{
+    border-radius: 29px;
+    width: 45px;
+    height: 45px;    
+    border: none;
 }
 
 /* Main Section */
@@ -48,19 +56,110 @@ header > .nav_bar {
     flex-direction: row;
     width: 100%;
 }
+/* SideBar Section > free Section Class */
 .free_section{
-    width: 10%;
-    height: 100vh;
-    background-color: aquamarine;
-
-}
-.video_section{
-    width: 70%;
-    height: 100vh;
-    background-color: blueviolet;
-}
-.playlist{
+    margin-left: 30px;
     width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* Sidebar Section > first_bar Class */
+.first_bar{
+    display: flex;
+    height: 90vh;
+    width: 14vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* Sidebar Section > Second_bar Class */
+.second_bar{
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* Sidebar Seciton > more_youtube class */
+.more_youtube{
+    height: 46vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* Sidebar Section > Setting class */
+.settings{
+    display: flex;
+    flex-direction: column;
+    height: 48vh;
+    justify-content: space-evenly;
+}
+.footer > .start_footer > a, .footer > .end_footer > a{
+    display: inline-block;
+    text-decoration: none;
+    color: #606060;
+    margin-left: 14px;
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+    font-weight: 600;
+}
+.videos_playlist{
+    width: 80%;
     height: 100vh;
-    background-color: brown;
+}
+
+.tags > button{
+    padding: 12px;
+    border-radius: 8px;
+    margin-right: 4px;
+    border: none;
+    cursor: pointer;
+}
+.video_list{
+    display: flex;
+    justify-content: space-between;
+    margin: 26px;
+}
+.thumbnail{
+    padding:8px;
+}
+.profile_pic > img{
+    border-radius: 22px;
+    width: 35px;
+    height: 35px;
+}
+.first_row{
+    display:flex;
+}
+.last_row{
+    display: flex;
+}
+.description > .song_name{
+    margin-left: 13px;
+}
+/* Sidebar Section */
+ul .sidebar_s1{
+    list-style-type: none;
+}
+ul li a{
+    display: block;
+    align-items: center;
+}
+li a:link{
+    color: #212121;
+}
+
+/* Icons */
+.yt-icon{
+    width: 4.1em
+}
+/* Option icon */
+.fa-bars{
+    color: #212121;
+    margin: 20px;
+}
+.fa-user{
+    color: #065fd4;
+}
+hr.solid{
+    border: 1px solid #ccc;
 }

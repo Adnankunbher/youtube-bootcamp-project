@@ -1,40 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/97abdaebbb.css" crossorigin="anonymous"> -->
-    
+    <link rel="stylesheet" href="https://kit.fontawesome.com/97abdaebbb.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
     <title>Youtube</title>
 </head>
+
 <body>
     <header>
         <div class="nav_bar">
-            <div class="logo">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-                <i><img src="./youtube.png" alt="" class="yt-icon"></i>
+            <div class="start">
+                <div class="logo">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <i><img src="./youtube.png" alt="" class="yt-icon"></i>
+                </div>
             </div>
-            <div class="search">
-                <input type="text" placeholder="Search" id="sr-input">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                <button><i class="fa-solid fa-microphone"></i></button>
+            <div class="center">
+                <div class="search">
+                    <input type="text" placeholder="Search" id="sr-input">
+                    <button id="yt_search_icon_btn"><i class="fa-solid fa-magnifying-glass" width="24px"
+                            height="24px"></i></button>
+                </div>
+                <div id="voice_search" style="margin: 20px;">
+                    <button><i class="fa-solid fa-microphone" style="font-size: 20px;"></i></button>
+                </div>
             </div>
-            <div class="signin">
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-                <i class="fa-solid fa-user">Sign in</i>
+            <div class="end">
+                <div class="signin">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="fa-solid fa-user">Sign in</i>
+                </div>
             </div>
 
         </div>
     </header>
     <section class="main">
-        <div class="free_section">free-section</div>
-        <div class="video_section">
-            <video src="./video/y2mate.com - Kamli Wale Muhammad To Sadke Mein Jaan   Nusrat Fateh Ali Khan   Best Qawwali24_720p.mp4" controls width="200px"></video>
+        <div class="free_section">
+            <div class="first_bar">
+                <div class="home">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="shorts">
+                    <i class="fa-regular fa-flag"></i>
+                    <a href="#">Shorts</a>
+                </div>
+                <div class="subscriptions">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <a href="#">Subscriptions</a>
+                </div>
+                <div class="library">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <a href="#">Library</a>
+                </div>
+                <div class="history">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <a href="#">History</a>
+                </div>
+                <hr class="solid">
+            </div>
+            <div class="signin_bar">
+                <div class="signin">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <i class="fa-solid fa-user">Sign in</i>
+                </div>
+                <hr class="solid">
+            </div>
+            <!-- Sidebar Section 2 -->
+            <div class="second_bar">
+                <h3>Explore</h3>
+                <div class="trending">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <a href="#">Trending</a>
+                </div>
+                <div class="shorts">
+                    <i class="fa-regular fa-flag"></i>
+                    <a href="#">Music</a>
+                </div>
+                <div class="gaming">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <a href="#">Gaming</a>
+                </div>
+                <div class="news">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <a href="#">News</a>
+                </div>
+                <div class="sports">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <a href="#">Sports</a>
+                </div>
+                <hr class="solid">
+            </div>
+            <div class="middle_bar">
+                <div class="browse_channels" style="margin-bottom: 15px;">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <a href="#">Browse Channels</a>
+                </div>
+                <hr class="solid" style="margin-top: 2px;margin-bottom: 2px;">
+            </div>
+            <div class="more_youtube">
+                <h3>More on Youtube</h3>
+                <div class="yt_music">
+                    <embed src="./icon/icons8-youtube-music.svg">
+                    <a href="#">YouTube Music</a>
+                </div>
+                <div class="yt_kids">
+                    <embed src="./icon/icons8-youtube.svg" type="">
+                    <a href="#">YouTube Kids</a>
+                </div>
+                <div class="yt_tv">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <a href="#">YouTube Tv</a>
+                </div>
+                <hr class="solid">
+            </div>
+            <div class="settings">
+                <div class="yt_setting">
+                    <embed src="./icon/icons8-settings.svg">
+                    <a href="#">Setting</a>
+                </div>
+                <div class="yt_reports">
+                    <embed src="" type="">
+                    <a href="#">Reports</a>
+                </div>
+                <div class="yt_help">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <a href="#">Help</a>
+                </div>
+                <div class="yt_feedback">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <a href="#">Youtube Feedback</a>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="start_footer" style="margin-bottom: 20px;">
+                    <a href="#">About</a>
+                    <a href="">Press</a>
+                    <a href="">Copyright</a>
+                    <a href="">Contact Us</a>
+                    <a href="">Creator</a>
+                    <a href="">Advertiser</a>
+                    <a href="">Developers</a>
+                </div>
+                <div class="end_footer">
+                    <a href="">Terms</a>
+                    <a href="">Privacy</a>
+                    <a href="">Policy & Safety</a>
+                    <a href="">How YouTube works</a>
+                    <a href="">Test new features</a>
+                </div>
+                <div class="copyright_tag" style="color: #909090;
+                padding: 10px 84px 9px 67px">&copy; 2023 Google LLC</div>
+            </div>
+
         </div>
-        <div class="playlist">Video Playlist</div>
+        <div class="videos_playlist">
+            <div class="tags">
+                <button>All</button>
+                <button>Music</button>
+                <button>Atif Aslam</button>
+                <button>Nusrat Fateh Ali Khan</button>
+                <button>Javascript</button>
+                <button>Html & CSS</button>
+                <button>Html & CSS</button>
+                <button>Html & CSS</button>
+                <button>Html & CSS</button>
+                <button>Html & CSS</button>
+            </div>
+            <div class="video_list">
+                <div class="thumbnail">
+                    <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="100%">
+                    <div class="description">
+                        <div class="first_row">
+                            <div class="profile_pic">
+                                <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="50%" >
+                            </div>
+                            <div class="song_name" style="margin-left: 6px;">
+                                Allah ho, Allah ho by Nusrat Fateh Ali Khan 
+                            </div>
+                        </div>
+                        <div class="second_row" style="margin-left: 40px;">
+                            <div class="channel_name" style="margin-top: 8px;">Qawali Studio29</div>
+                            <div class="last_row">
+                                <div class="views" style="margin-right: 13px;">182k views</div>
+                                <div class="upload_time">9 Months</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="100%">
+                    <div class="description">
+                        <div class="first_row">
+                            <div class="profile_pic">
+                                <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="50%" >
+                            </div>
+                            <div class="song_name" style="margin-left: 6px;">
+                                Allah ho, Allah ho by Nusrat Fateh Ali Khan 
+                            </div>
+                        </div>
+                        <div class="second_row" style="margin-left: 40px;">
+                            <div class="channel_name" style="margin-top: 8px;">Qawali Studio29</div>
+                            <div class="last_row">
+                                <div class="views" style="margin-right: 13px;">182k views</div>
+                                <div class="upload_time">9 Months</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="100%">
+                    <div class="description">
+                        <div class="first_row">
+                            <div class="profile_pic">
+                                <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="50%" >
+                            </div>
+                            <div class="song_name" style="margin-left: 6px;">
+                                Allah ho, Allah ho by Nusrat Fateh Ali Khan 
+                            </div>
+                        </div>
+                        <div class="second_row" style="margin-left: 40px;">
+                            <div class="channel_name" style="margin-top: 8px;">Qawali Studio29</div>
+                            <div class="last_row">
+                                <div class="views" style="margin-right: 13px;">182k views</div>
+                                <div class="upload_time">9 Months</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="100%">
+                    <div class="description">
+                        <div class="first_row">
+                            <div class="profile_pic">
+                                <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="50%" >
+                            </div>
+                            <div class="song_name" style="margin-left: 6px;">
+                                Allah ho, Allah ho by Nusrat Fateh Ali Khan 
+                            </div>
+                        </div>
+                        <div class="second_row" style="margin-left: 40px;">
+                            <div class="channel_name" style="margin-top: 8px;">Qawali Studio29</div>
+                            <div class="last_row">
+                                <div class="views" style="margin-right: 13px;">182k views</div>
+                                <div class="upload_time">9 Months</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video_list">
+                <div class="thumbnail">
+                    <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="100%">
+                    <div class="description">
+                        <div class="first_row">
+                            <div class="profile_pic">
+                                <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="50%" >
+                            </div>
+                            <div class="song_name" style="margin-left: 6px;">
+                                Allah ho, Allah ho by Nusrat Fateh Ali Khan 
+                            </div>
+                        </div>
+                        <div class="second_row" style="margin-left: 40px;">
+                            <div class="channel_name" style="margin-top: 8px;">Qawali Studio29</div>
+                            <div class="last_row">
+                                <div class="views" style="margin-right: 13px;">182k views</div>
+                                <div class="upload_time">9 Months</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="100%">
+                    <div class="description">
+                        <div class="first_row">
+                            <div class="profile_pic">
+                                <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="50%" >
+                            </div>
+                            <div class="song_name" style="margin-left: 6px;">
+                                Allah ho, Allah ho by Nusrat Fateh Ali Khan 
+                            </div>
+                        </div>
+                        <div class="second_row" style="margin-left: 40px;">
+                            <div class="channel_name" style="margin-top: 8px;">Qawali Studio29</div>
+                            <div class="last_row">
+                                <div class="views" style="margin-right: 13px;">182k views</div>
+                                <div class="upload_time">9 Months</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="100%">
+                    <div class="description">
+                        <div class="first_row">
+                            <div class="profile_pic">
+                                <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="50%" >
+                            </div>
+                            <div class="song_name" style="margin-left: 6px;">
+                                Allah ho, Allah ho by Nusrat Fateh Ali Khan 
+                            </div>
+                        </div>
+                        <div class="second_row" style="margin-left: 40px;">
+                            <div class="channel_name" style="margin-top: 8px;">Qawali Studio29</div>
+                            <div class="last_row">
+                                <div class="views" style="margin-right: 13px;">182k views</div>
+                                <div class="upload_time">9 Months</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="100%">
+                    <div class="description">
+                        <div class="first_row">
+                            <div class="profile_pic">
+                                <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="50%" >
+                            </div>
+                            <div class="song_name" style="margin-left: 6px;">
+                                Allah ho, Allah ho by Nusrat Fateh Ali Khan 
+                            </div>
+                        </div>
+                        <div class="second_row" style="margin-left: 40px;">
+                            <div class="channel_name" style="margin-top: 8px;">Qawali Studio29</div>
+                            <div class="last_row">
+                                <div class="views" style="margin-right: 13px;">182k views</div>
+                                <div class="upload_time">9 Months</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video_list">
+                <div class="thumbnail">
+                    <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="100%">
+                    <div class="description">
+                        <div class="first_row">
+                            <div class="profile_pic">
+                                <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="50%" >
+                            </div>
+                            <div class="song_name" style="margin-left: 6px;">
+                                Allah ho, Allah ho by Nusrat Fateh Ali Khan 
+                            </div>
+                        </div>
+                        <div class="second_row" style="margin-left: 40px;">
+                            <div class="channel_name" style="margin-top: 8px;">Qawali Studio29</div>
+                            <div class="last_row">
+                                <div class="views" style="margin-right: 13px;">182k views</div>
+                                <div class="upload_time">9 Months</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="100%">
+                    <div class="description">
+                        <div class="first_row">
+                            <div class="profile_pic">
+                                <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="50%" >
+                            </div>
+                            <div class="song_name" style="margin-left: 6px;">
+                                Allah ho, Allah ho by Nusrat Fateh Ali Khan 
+                            </div>
+                        </div>
+                        <div class="second_row" style="margin-left: 40px;">
+                            <div class="channel_name" style="margin-top: 8px;">Qawali Studio29</div>
+                            <div class="last_row">
+                                <div class="views" style="margin-right: 13px;">182k views</div>
+                                <div class="upload_time">9 Months</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="100%">
+                    <div class="description">
+                        <div class="first_row">
+                            <div class="profile_pic">
+                                <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="50%" >
+                            </div>
+                            <div class="song_name" style="margin-left: 6px;">
+                                Allah ho, Allah ho by Nusrat Fateh Ali Khan 
+                            </div>
+                        </div>
+                        <div class="second_row" style="margin-left: 40px;">
+                            <div class="channel_name" style="margin-top: 8px;">Qawali Studio29</div>
+                            <div class="last_row">
+                                <div class="views" style="margin-right: 13px;">182k views</div>
+                                <div class="upload_time">9 Months</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="100%">
+                    <div class="description">
+                        <div class="first_row">
+                            <div class="profile_pic">
+                                <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="50%" >
+                            </div>
+                            <div class="song_name" style="margin-left: 6px;">
+                                Allah ho, Allah ho by Nusrat Fateh Ali Khan 
+                            </div>
+                        </div>
+                        <div class="second_row" style="margin-left: 40px;">
+                            <div class="channel_name" style="margin-top: 8px;">Qawali Studio29</div>
+                            <div class="last_row">
+                                <div class="views" style="margin-right: 13px;">182k views</div>
+                                <div class="upload_time">9 Months</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video_list">
+                <div class="thumbnail">
+                    <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="100%">
+                    <div class="description">
+                        <div class="first_row">
+                            <div class="profile_pic">
+                                <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="50%" >
+                            </div>
+                            <div class="song_name" style="margin-left: 6px;">
+                                Allah ho, Allah ho by Nusrat Fateh Ali Khan 
+                            </div>
+                        </div>
+                        <div class="second_row" style="margin-left: 40px;">
+                            <div class="channel_name" style="margin-top: 8px;">Qawali Studio29</div>
+                            <div class="last_row">
+                                <div class="views" style="margin-right: 13px;">182k views</div>
+                                <div class="upload_time">9 Months</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="100%">
+                    <div class="description">
+                        <div class="first_row">
+                            <div class="profile_pic">
+                                <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="50%" >
+                            </div>
+                            <div class="song_name" style="margin-left: 6px;">
+                                Allah ho, Allah ho by Nusrat Fateh Ali Khan 
+                            </div>
+                        </div>
+                        <div class="second_row" style="margin-left: 40px;">
+                            <div class="channel_name" style="margin-top: 8px;">Qawali Studio29</div>
+                            <div class="last_row">
+                                <div class="views" style="margin-right: 13px;">182k views</div>
+                                <div class="upload_time">9 Months</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="100%">
+                    <div class="description">
+                        <div class="first_row">
+                            <div class="profile_pic">
+                                <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="50%" >
+                            </div>
+                            <div class="song_name" style="margin-left: 6px;">
+                                Allah ho, Allah ho by Nusrat Fateh Ali Khan 
+                            </div>
+                        </div>
+                        <div class="second_row" style="margin-left: 40px;">
+                            <div class="channel_name" style="margin-top: 8px;">Qawali Studio29</div>
+                            <div class="last_row">
+                                <div class="views" style="margin-right: 13px;">182k views</div>
+                                <div class="upload_time">9 Months</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thumbnail">
+                    <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="100%">
+                    <div class="description">
+                        <div class="first_row">
+                            <div class="profile_pic">
+                                <img src="./images/BBSULK_SportWeek2019.gif" alt="" width="50%" >
+                            </div>
+                            <div class="song_name" style="margin-left: 6px;">
+                                Allah ho, Allah ho by Nusrat Fateh Ali Khan 
+                            </div>
+                        </div>
+                        <div class="second_row" style="margin-left: 40px;">
+                            <div class="channel_name" style="margin-top: 8px;">Qawali Studio29</div>
+                            <div class="last_row">
+                                <div class="views" style="margin-right: 13px;">182k views</div>
+                                <div class="upload_time">9 Months</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 <script src="https://kit.fontawesome.com/97abdaebbb.js" crossorigin="anonymous"></script>
+
 </html>
